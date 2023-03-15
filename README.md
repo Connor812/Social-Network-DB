@@ -19,7 +19,7 @@ This is a `Backend` program that is desinged for a social medai plateform. Its d
 
 ## Usage🔋
 
-How to use. You will need to use insomnia application to test the backend routes. To get the routes, you can navigate to the Insomnia folder where there is a [json file](./Insomnia%20/Social%20Network%20Insomnia%20Routes.json) that you can save, and import into insomnia to have all the pre written routes for you. From there, it has 4 fodlers with the test routes in them, for some of the they will have `<>` in the url. You can change these paramiters to the Id's of the models you are working on. There are also some pre written users for you to create, and thoughts as well. Have fun testing out the routes!
+How to use. You will need to use insomnia application to test the backend routes. To get the routes, you can navigate to the Insomnia folder where there is a [json file](./Insomnia%20/Socail%20Network%20DB%20Insomnia.json) that you can save, and import into insomnia to have all the pre written routes for you. From there, it has 4 fodlers with the test routes in them, for some of the they will have `<>` in the url. You can change these paramiters to the Id's of the models you are working on. There are also some pre written users for you to create, and thoughts as well. Have fun testing out the routes!
 
 ## Credits🙏🏻
 
