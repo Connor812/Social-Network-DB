@@ -10,13 +10,12 @@ This is a `Backend` program that is desinged for a social medai plateform. Its d
 - [Usgae](#usage🔋)
 - [Credits](#credits🙏🏻)
 - [License](#license🔑)
-- [Screenshot](#screenshot📸)
 - [Video How To](#video📺)
 
 ## How-to-Install🔌
 
 * GitHub Repo: [Connor812](https://github.com/Connor812/Social-Network-DB)
-* How to install: [Video]()
+* How to install: [Video](https://drive.google.com/file/d/1EzMZgx8F_Go7OFLUdwN1JWykt1d1HHK4/view)
 
 ## Usage🔋
 
@@ -32,4 +31,4 @@ Huge shoutout to the University of Toronto for teaching me how to code.
 
 ## Video📺
 
-[How to Video]()
+[How to Video](https://drive.google.com/file/d/1EzMZgx8F_Go7OFLUdwN1JWykt1d1HHK4/view)
