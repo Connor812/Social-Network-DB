@@ -52,5 +52,49 @@ module.exports = {
                 console.log(err);
                 res.status(500).json(err);
             });
+    },
+
+    // Update Thought
+
+    updateThought(req, res) {
+        Thought.findOneAndUpdate(
+            { _id: req.params.id },
+            { $set: { thoughtText: req.body.thoughtText } }
+            )
+            .then((updatedThought) => {
+                !updatedThought
+                    ? res.status(404).json({ message: 'Thought with that Id not found!'} )
+                    : res.status(200).json('Successfully Updated Thought!🥳')
+            })
+            .catch((err) => {
+                console.log(err);
+                res.status(500).json(err);
+            });
+    },
+
+    // Delete Thought
+
+    deleteThought(req, res) {
+        console.log(req.params.id)
+        Thought.findOneAndDelete({ _id: req.params.id })
+        .then((deletedThought) => {
+            console.log(deletedThought)
+            !deletedThought
+                ? res.status(404).json({ message: 'No thought with that Id found!' })
+                : User.findOneAndUpdate(
+                    { thoughts: req.params.id },
+                    { $pull: { thoughts: req.params.id } },
+                    { new: true }
+                )
+                .then((updatedUser) => {
+                    !updatedUser
+                        ?res.status(404).json({ message: 'Failed to removed deleted thought from the user!' })
+                        :res.status(200).json('Successfully deleted thought!🥳')
+                })
+                .catch((err) => {
+                    console.log(err);
+                    res.status(500).json(err);
+                });
+        });
     }
 }
