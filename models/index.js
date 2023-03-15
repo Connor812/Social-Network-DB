@@ -1,3 +1,4 @@
+const User = require('./Users');
+const Thought = require('./Thoughts');
 
-
-module.exports = 'names of models'
+module.exports = { User, Thought };
